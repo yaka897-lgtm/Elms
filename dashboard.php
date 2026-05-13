@@ -111,7 +111,7 @@ $performance_data = $statsStmt->fetchAll();
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<link rel="stylesheet" href="<?= SITE_ROOT ?>css/dashboard.css">
+<link rel="stylesheet" href="<?= SITE_ROOT ?>css/dashboard.css?v=<?= filemtime(__DIR__ . '/css/dashboard.css') ?>">
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>

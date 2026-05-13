@@ -120,7 +120,7 @@ $instructions = $iStmt->fetchColumn();
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<link rel="stylesheet" href="<?= SITE_ROOT ?>css/dashboard.css">
+<link rel="stylesheet" href="<?= SITE_ROOT ?>css/dashboard.css?v=<?= filemtime(__DIR__ . '/css/dashboard.css') ?>">
 
 
 <main class="container py-8">
