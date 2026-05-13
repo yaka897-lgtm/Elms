@@ -43,7 +43,7 @@ foreach ($tenants as $key => $t) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platform Command Center</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=<?= filemtime(__DIR__ . '/../css/style.css') ?>">
     <style>
         :root {
             --admin-bg: #f8fafc;

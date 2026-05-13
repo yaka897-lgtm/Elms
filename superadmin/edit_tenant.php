@@ -123,7 +123,7 @@ $stats = SuperAdminHelper::getTenantStats($tenant);
     <meta charset="UTF-8">
     <title>Manage Academy - <?= htmlspecialchars($tenant['name']) ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=<?= filemtime(__DIR__ . '/../css/style.css') ?>">
     <style>
         :root {
             --admin-bg: #f8fafc;

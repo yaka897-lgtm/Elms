@@ -59,8 +59,8 @@ $notif_count = $nStmt->fetchColumn();
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="<?= SITE_ROOT ?>css/style.css">
-    <link rel="stylesheet" href="<?= SITE_ROOT ?>css/admin.css">
+    <link rel="stylesheet" href="<?= SITE_ROOT ?>css/style.css?v=<?= filemtime(__DIR__ . '/../../css/style.css') ?>">
+    <link rel="stylesheet" href="<?= SITE_ROOT ?>css/admin.css?v=<?= filemtime(__DIR__ . '/../../css/admin.css') ?>">
 
     <script>
         const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');

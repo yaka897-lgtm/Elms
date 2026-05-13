@@ -66,7 +66,7 @@ $all_recordings = $allStmt->fetchAll();
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<link rel="stylesheet" href="<?= SITE_ROOT ?>css/learning.css">
+<link rel="stylesheet" href="<?= SITE_ROOT ?>css/learning.css?v=<?= filemtime(__DIR__ . '/css/learning.css') ?>">
 
 
 <main class="container py-8">
